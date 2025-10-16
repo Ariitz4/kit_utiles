@@ -4,4 +4,4 @@ from src.numbers import sum_list
 
 def test_sum_list_negativos_y_floats():
     assert sum_list([-2, 0.5, 1.5]) == 0.0
-#Beñat tonto
+#Beñat ya no es tonto
