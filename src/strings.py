@@ -14,7 +14,7 @@ _WORD_REGEX = re.compile(r"[a-z]+")  # solo letras minúsculas
 
 #_EMAIL = re.compile(r"^[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,10}$")
 # Expresion regular email corregida
-_EMAIL = re.compile(r"^[A-Za-z0-9._-]+@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,10}$")
+_EMAIL = re.compile(r"^[A-Za-z0-9._-]+@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,9}$")
 
 # -------------------------------------------------------
 # Funciones de utilidad

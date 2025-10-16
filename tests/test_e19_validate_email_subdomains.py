@@ -8,7 +8,7 @@ def test_validate_email_subdominios_y_tld():
     ]
     ko = [
         "user@mail.example.c",       # TLD 1
-        "user@mail.example.toolongtld1",  # TLD >10
+        "user@mail.example.toolongtld",  # TLD >10
         "user@@mail.com",
     ]
     for e in ok:
