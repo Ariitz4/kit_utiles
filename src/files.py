@@ -6,12 +6,15 @@ Ejemplo de lectura y escritura de líneas en archivos de texto.
 from pathlib import Path
 from typing import Iterable
 
-
 def save_lines(path: Path, lines: Iterable[str]) -> None:
     """
     Guarda una lista de cadenas en un archivo, una por línea.
-    No añade líneas en blanco adicionales.
+    Crea las carpetas si no existen.
     """
+    # Crear carpetas padres si no existen
+    path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Guardar contenido
     content = "\n".join(lines)
     path.write_text(content, encoding="utf-8")
 
