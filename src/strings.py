@@ -11,7 +11,10 @@ from collections import Counter
 # Expresiones regulares
 # -------------------------------------------------------
 _WORD_REGEX = re.compile(r"[a-z]+")  # solo letras minúsculas
-_EMAIL_REGEX = re.compile(r"^[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,10}$")
+
+#_EMAIL = re.compile(r"^[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,10}$")
+# Expresion regular email corregida
+_EMAIL = re.compile(r"^[A-Za-z0-9._-]+@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,10}$")
 
 # -------------------------------------------------------
 # Funciones de utilidad
@@ -47,7 +50,7 @@ def validate_email(email: str) -> bool:
         - dominio: letras, números, -
         - tld: 2 a 10 letras
     """
-    return bool(_EMAIL_REGEX.match(email))
+    return bool(_EMAIL.match(email))
 
 # -------------------------------------------------------
 # Ejemplo de uso de word_count
