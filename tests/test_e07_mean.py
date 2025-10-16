@@ -6,4 +6,4 @@ def test_mean_numbers():
 
 def test_mean_empty_list():
     with pytest.raises(ValueError, match="empty sequence"):
-        mean([])
+        mean([])# comentario de prueba para lista vacía
