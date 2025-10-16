@@ -1,4 +1,4 @@
-name: iabd_plantilla
+name: kit_utiles
 channels:
   - defaults
   - conda-forge
