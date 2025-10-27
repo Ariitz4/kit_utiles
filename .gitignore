@@ -215,3 +215,6 @@ venvKitUtiles/Scripts/pip3.11.exe
 venvKitUtiles/Scripts/pip3.exe
 venvKitUtiles/Scripts/python.exe
 venvKitUtiles/Scripts/pythonw.exe
+venvKitUtiles/Scripts/pygmentize.exe
+venvKitUtiles/Scripts/send2trash.exe
+venvKitUtiles/Scripts/wsdump.exe
