@@ -2,6 +2,7 @@ from src.numbers import sum_list
 import pytest
 
 #TODO - Quitar el comentario para la fase 3 del proyecto
+#TODO - Quitar el comentario para la fase 3 del proyecto - Cambios añadidos para generar conflicto
 def test_sum_list_with_numbers():
     # Arrange
     numbers = [1, 2, 3, 4]
